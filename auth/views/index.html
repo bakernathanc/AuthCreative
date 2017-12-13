@@ -2,7 +2,7 @@
 <html ng-app="myApp"> 
     
 <head>
-    <title>User Login and Sessions</title>
+    <title>User Login and Chat</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
 </head>
         
@@ -11,10 +11,8 @@
         <h2 id="welcomeText">Welcome. You are Logged In as
             <%= username %>
         </h2>
-        <a id="logoutLink" href="/logout">logout</a>
-        <a id="editLink" href="/user">Edit User</a>
-        <p>This is some super awesome code that I came up with
-            <p>
+        <a id="logoutLink" href="/logout">Logout</a>
+        <br><a id="editLink" href="/user">Edit Profile</a>
     </div>
     <hr>
     <span id="indexMsg">
@@ -22,11 +20,12 @@
     </span>
     <hr>
     <span id="colorText">
-    Color
+    Color: 
         <%= color %>
       </span>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
+    <br><br><br><a class="chatLink" href="">Click here to join the chat! Remember your username!</a>
 </body>
       
 </html>
